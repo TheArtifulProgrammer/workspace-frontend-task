@@ -29,7 +29,7 @@ A clean, modern workspace interface built with React, TypeScript, and Tailwind C
 1. Clone the repository
 
 ```bash
-git clone <https://github.com/TheArtifulProgrammer/workspace-frontend-task.git>
+git clone https://github.com/TheArtifulProgrammer/workspace-frontend-task.git
 cd workspace-ui
 ```
 
