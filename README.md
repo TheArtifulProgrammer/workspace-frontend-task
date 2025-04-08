@@ -14,7 +14,7 @@ A clean, modern workspace interface built with React, TypeScript, and Tailwind C
 
 - React 18
 - TypeScript
-- Tailwind CSS 3
+- Tailwind v4
 - Vite (for development and building)
 
 ## Getting Started
@@ -29,7 +29,7 @@ A clean, modern workspace interface built with React, TypeScript, and Tailwind C
 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/TheArtifulProgrammer/workspace-frontend-task.git>
 cd workspace-ui
 ```
 
