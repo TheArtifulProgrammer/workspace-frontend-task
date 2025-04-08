@@ -5,7 +5,7 @@ interface DataTableProps {
 
 export default function DataTable({ columns, rows }: DataTableProps) {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto -mx-3 px-3 md:mx-0 md:px-0">
       <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-800">
         <thead className="bg-gray-50 dark:bg-gray-800">
           <tr>
@@ -13,9 +13,11 @@ export default function DataTable({ columns, rows }: DataTableProps) {
               <th
                 key={index}
                 scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider"
+                className="px-2 md:px-6 py-2 md:py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider"
               >
-                {column}
+                {/* Show shorter column names on mobile */}
+                <span className="md:hidden">{column.substring(0, 3)}</span>
+                <span className="hidden md:inline">{column}</span>
               </th>
             ))}
           </tr>
@@ -29,7 +31,7 @@ export default function DataTable({ columns, rows }: DataTableProps) {
               {row.data.map((cell, cellIndex) => (
                 <td
                   key={cellIndex}
-                  className={`px-6 py-4 whitespace-nowrap text-sm ${
+                  className={`px-2 md:px-6 py-2 md:py-4 text-xs md:text-sm whitespace-nowrap ${
                     cellIndex === 0
                       ? "font-medium text-gray-900 dark:text-white"
                       : "text-gray-500 dark:text-gray-400"
