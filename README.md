@@ -4,9 +4,9 @@ A clean, modern workspace interface built with React, TypeScript, and Tailwind C
 
 ## Features
 
-- Fixed multi-panel layout with sidebar, header, and main content area
-- Tabbed panels with placeholder content and a data table
-- Dark/light theme toggle with system preference detection
+- Fixed multi-panel layout with sidebar, header, and main content area.
+- Tabbed panels with placeholder content and a data table.
+- Dark/light theme toggle with system preference detection.
 - Responsive design for different screen sizes
 - Clean, minimal UI inspired by Next.js design
 
